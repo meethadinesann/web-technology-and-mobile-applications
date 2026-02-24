@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Property Layout</title>
+</head>
+<body>
+
+<h2>Property Location Map</h2>
+
+<iframe 
+src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!"
+width="100%" 
+height="300">
+</iframe>
+
+<br><br>
+
+<h3>Property Layout (Click Areas)</h3>
+
+<img src="https://via.placeholder.com/600x350?text=Property+Layout"
+usemap="#propertymap"
+width="600">
+
+<map name="propertymap">
+<area shape="rect" coords="50,50,200,200" href="#" alt="Living Room">
+<area shape="rect" coords="250,50,400,200" href="#" alt="Bedroom">
+<area shape="rect" coords="50,250,200,350" href="#" alt="Kitchen">
+</map>
+
+<br><br>
+
+<a href="#">View Living Room</a><br>
+<a href="#">View Bedroom</a><br>
+<a href="#">View Kitchen</a>
+
+</body>
+</html>
