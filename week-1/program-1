@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Property Listing Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+        h1 {
+            text-align: center;
+            color: darkgreen;
+        }
+        table {
+            width: 80%;
+            margin: auto;
+            border-collapse: collapse;
+            background-color: white;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: lightgreen;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            background-color: white;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>ONLINE PROPERTY LISTING WEBSITE</h1>
+
+<div class="container">
+
+    <h2>Steps to List a Property (Ordered List)</h2>
+    <ol>
+        <li>Create an Account</li>
+        <li>Login to Dashboard</li>
+        <li>Add Property Details</li>
+        <li>Upload Images</li>
+        <li>Publish Listing</li>
+    </ol>
+
+    <h2>Available Property Types (Unordered List)</h2>
+    <ul>
+        <li>Apartment</li>
+        <li>Independent House</li>
+        <li>Villa</li>
+        <li>Commercial Property</li>
+        <li>Land/Plot</li>
+    </ul>
+
+</div>
+
+<br>
+
+<h2 style="text-align:center;">Property Listing Records</h2>
+
+<table>
+    <tr>
+        <th>Property ID</th>
+        <th>Owner Name</th>
+        <th>Location</th>
+        <th>Type</th>
+        <th>Price</th>
+        <th>Status</th>
+    </tr>
+
+    <tr>
+        <td>201</td>
+        <td>Rahul Sharma</td>
+        <td>Chennai</td>
+        <td>Apartment</td>
+        <td>₹45,00,000</td>
+        <td>Available</td>
+    </tr>
+
+    <tr>
+        <td>202</td>
+        <td>Priya Verma</td>
+        <td>Bangalore</td>
+        <td>Villa</td>
+        <td>₹1,20,00,000</td>
+        <td>Sold</td>
+    </tr>
+
+    <tr>
+        <td>203</td>
+        <td>Arjun Singh</td>
+        <td>Hyderabad</td>
+        <td>Commercial</td>
+        <td>₹85,00,000</td>
+        <td>Available</td>
+    </tr>
+
+</table>
+
+</body>
+</html>
