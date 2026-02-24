@@ -42,20 +42,20 @@
 
     <h2>Steps to List a Property (Ordered List)</h2>
     <ol>
-        <li>Create an Account</li>
-        <li>Login to Dashboard</li>
-        <li>Add Property Details</li>
-        <li>Upload Images</li>
-        <li>Publish Listing</li>
+        <li>Create an account</li>
+        <li>Login to dashboard</li>
+        <li>Add property details</li>
+        <li>Upload property images</li>
+        <li>Publish listing</li>
     </ol>
 
-    <h2>Available Property Types (Unordered List)</h2>
+    <h2>Property Categories (Unordered List)</h2>
     <ul>
-        <li>Apartment</li>
-        <li>Independent House</li>
-        <li>Villa</li>
-        <li>Commercial Property</li>
-        <li>Land/Plot</li>
+        <li>Apartments</li>
+        <li>Independent Houses</li>
+        <li>Villas</li>
+        <li>Commercial Spaces</li>
+        <li>Plots & Land</li>
     </ul>
 
 </div>
@@ -65,42 +65,38 @@
 <h2 style="text-align:center;">Property Listing Records</h2>
 
 <table>
-    <tr>
-        <th>Property ID</th>
-        <th>Owner Name</th>
-        <th>Location</th>
-        <th>Type</th>
-        <th>Price</th>
-        <th>Status</th>
-    </tr>
-
-    <tr>
-        <td>201</td>
-        <td>Rahul Sharma</td>
-        <td>Chennai</td>
-        <td>Apartment</td>
-        <td>₹45,00,000</td>
-        <td>Available</td>
-    </tr>
-
-    <tr>
-        <td>202</td>
-        <td>Priya Verma</td>
-        <td>Bangalore</td>
-        <td>Villa</td>
-        <td>₹1,20,00,000</td>
-        <td>Sold</td>
-    </tr>
-
-    <tr>
-        <td>203</td>
-        <td>Arjun Singh</td>
-        <td>Hyderabad</td>
-        <td>Commercial</td>
-        <td>₹85,00,000</td>
-        <td>Available</td>
-    </tr>
-
+<tr>
+    <th>Property ID</th>
+    <th>Owner Name</th>
+    <th>Property Type</th>
+    <th>Location</th>
+    <th>Price</th>
+    <th>Status</th>
+</tr>
+<tr>
+    <td>P101</td>
+    <td>Rahul Sharma</td>
+    <td>Apartment</td>
+    <td>Chennai</td>
+    <td>₹45,00,000</td>
+    <td>Available</td>
+</tr>
+<tr>
+    <td>P102</td>
+    <td>Priya Verma</td>
+    <td>Villa</td>
+    <td>Bangalore</td>
+    <td>₹1,20,00,000</td>
+    <td>Sold</td>
+</tr>
+<tr>
+    <td>P103</td>
+    <td>Amit Singh</td>
+    <td>Commercial</td>
+    <td>Hyderabad</td>
+    <td>₹75,00,000</td>
+    <td>Available</td>
+</tr>
 </table>
 
 </body>
