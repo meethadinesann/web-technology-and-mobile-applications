@@ -1,0 +1,31 @@
+<div id="card"
+onmouseover="over()"
+onmouseout="out()"
+onclick="clickMe()"
+style="width:250px;padding:20px;background:lightgray;text-align:center;cursor:pointer;">
+
+🏠 2BHK Apartment
+
+</div>
+
+<p id="msg"></p>
+
+<script>
+function over(){
+    var c = document.getElementById("card");
+    c.style.background="green";
+    c.style.color="white";
+    document.getElementById("msg").innerHTML="Viewing Property";
+}
+
+function out(){
+    var c = document.getElementById("card");
+    c.style.background="lightgray";
+    c.style.color="black";
+    document.getElementById("msg").innerHTML="Mouse Left";
+}
+
+function clickMe(){
+    document.getElementById("msg").innerHTML="Property Selected!";
+}
+</script>
