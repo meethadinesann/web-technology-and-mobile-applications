@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Property Registration</title>
+
+<script>
+function validateForm(){
+
+    var owner = document.getElementById("owner").value;
+    var title = document.getElementById("title").value;
+    var password = document.getElementById("password").value;
+    var email = document.getElementById("email").value;
+    var mobile = document.getElementById("mobile").value;
+    var address = document.getElementById("address").value;
+
+    // Owner Name
+    var namePattern = /^[A-Za-z ]{6,}$/;
+    if(!namePattern.test(owner)){
+        alert("Owner name must be at least 6 alphabets");
+        return false;
+    }
+
+    // Property Title
+    if(title == ""){
+        alert("Property Title cannot be empty");
+        return false;
+    }
+
+    // Password
+    if(password.length < 6){
+        alert("Password must be at least 6 characters");
+        return false;
+    }
+
+    // Email
+    var emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+    if(!emailPattern.test(email)){
+        alert("Enter valid email");
+        return false;
+    }
+
+    // Mobile
+    var mobilePattern = /^[0-9]{10}$/;
+    if(!mobilePattern.test(mobile)){
+        alert("Enter valid 10 digit mobile number");
+        return false;
+    }
+
+    // Address
+    if(address == ""){
+        alert("Address cannot be empty");
+        return false;
+    }
+
+    alert("Property Registered Successfully!");
+    return true;
+}
+</script>
+</head>
+
+<body>
+
+<h2>Property Registration</h2>
+
+<form onsubmit="return validateForm()">
+
+Owner Name: <input type="text" id="owner"><br><br>
+Property Title: <input type="text" id="title"><br><br>
+Password: <input type="password" id="password"><br><br>
+Email: <input type="text" id="email"><br><br>
+Mobile: <input type="text" id="mobile"><br><br>
+Address: <textarea id="address"></textarea><br><br>
+
+<input type="submit" value="Register Property">
+
+</form>
+
+</body>
+</html>
