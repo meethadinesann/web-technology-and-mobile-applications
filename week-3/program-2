@@ -1,0 +1,10 @@
+<script>
+function showPopup(){
+    alert("Property Submitted Successfully!");
+    return true;
+}
+</script>
+
+<form onsubmit="return showPopup()">
+    <input type="submit" value="Submit Property">
+</form>
