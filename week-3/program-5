@@ -1,0 +1,40 @@
+<button onclick="show()">Show Properties</button>
+<button onclick="total()">Total Value</button>
+
+<table id="table" border="1">
+<tr>
+<th>ID</th><th>Title</th><th>Location</th><th>Price</th>
+</tr>
+</table>
+
+<p id="totalVal"></p>
+
+<script>
+
+var properties=[
+{id:1,title:"Villa",location:"Chennai",price:5000000},
+{id:2,title:"Flat",location:"Bangalore",price:3000000},
+{id:3,title:"Plot",location:"Hyderabad",price:2000000}
+];
+
+function show(){
+    var t=document.getElementById("table");
+
+    if(t.rows.length>1) return;
+
+    properties.forEach(p=>{
+        var row=t.insertRow();
+        row.insertCell(0).innerHTML=p.id;
+        row.insertCell(1).innerHTML=p.title;
+        row.insertCell(2).innerHTML=p.location;
+        row.insertCell(3).innerHTML=p.price;
+    });
+}
+
+function total(){
+    var sum=0;
+    properties.forEach(p=> sum+=p.price);
+    document.getElementById("totalVal").innerHTML="Total Property Value: ₹ "+sum;
+}
+
+</script>
